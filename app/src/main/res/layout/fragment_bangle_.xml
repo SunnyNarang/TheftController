@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Ring_Frag">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        fresco:fadeDuration="600"
+        android:layout_marginTop="30dp"
+        fresco:roundingBorderWidth="1dp"
+        android:layout_gravity="center_horizontal"
+        fresco:roundingBorderColor="#3DBDFF"
+        android:layout_height="150dp"
+        fresco:roundAsCircle="true"
+        fresco:placeholderImage="@drawable/add_photo"
+        />
+    <exodiasolutions.buzz.Custom.CEditText
+
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Seller ID"
+        android:id="@+id/sellerID"
+        android:textColorHint="@color/colorhint"
+        android:textColor="@color/colorbutton"
+        android:padding="16dp"
+        android:gravity="left"
+        />
+    <exodiasolutions.buzz.Custom.CEditText
+
+        android:id="@+id/company"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Company"
+        android:textColorHint="@color/colorhint"
+        android:textColor="@color/colorbutton"
+        android:padding="16dp"
+        android:gravity="left"
+        />
+
+    <exodiasolutions.buzz.Custom.CEditText
+
+        android:id="@+id/weight"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weight"
+        android:textColorHint="@color/colorhint"
+        android:textColor="@color/colorbutton"
+        android:padding="16dp"
+        android:gravity="left"
+        />
+    <exodiasolutions.buzz.Custom.CEditText
+
+        android:id="@+id/material"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Material"
+        android:textColorHint="@color/colorhint"
+        android:textColor="@color/colorbutton"
+        android:padding="16dp"
+        android:gravity="left"
+        />
+    <exodiasolutions.buzz.Custom.CEditText
+
+        android:id="@+id/stone"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stone"
+        android:textColorHint="@color/colorhint"
+        android:textColor="@color/colorbutton"
+        android:padding="16dp"
+        android:gravity="left"
+        />
+    <exodiasolutions.buzz.Custom.CEditText
+
+        android:id="@+id/diameter"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Size"
+        android:textColorHint="@color/colorhint"
+        android:textColor="@color/colorbutton"
+        android:padding="16dp"
+        android:gravity="left"
+        />
+    <exodiasolutions.buzz.Custom.CEditText
+
+        android:id="@+id/karat"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Karat"
+        android:textColorHint="@color/colorhint"
+        android:textColor="@color/colorbutton"
+        android:padding="16dp"
+        android:gravity="left"
+        />
+    <exodiasolutions.buzz.Custom.CEditText
+
+        android:id="@+id/price"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:textColorHint="@color/colorhint"
+        android:textColor="@color/colorbutton"
+        android:padding="16dp"
+        android:gravity="left"
+        />
+    <exodiasolutions.buzz.Custom.CEditText
+
+        android:id="@+id/other1"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Other Features"
+        android:textColorHint="@color/colorhint"
+        android:textColor="@color/colorbutton"
+        android:padding="16dp"
+        android:gravity="left"
+        />
+    <exodiasolutions.buzz.Custom.CEditText
+
+        android:id="@+id/other2"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Other Features 2"
+        android:textColorHint="@color/colorhint"
+        android:textColor="@color/colorbutton"
+        android:padding="16dp"
+        android:gravity="left"
+        />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:background="@drawable/button_press"
+        android:textColor="#fff"
+        android:text="Submit"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

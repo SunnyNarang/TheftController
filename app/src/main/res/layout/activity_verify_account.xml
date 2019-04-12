@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.VerifyAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <exodiasolutions.buzz.Custom.TV_normaltext
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="We Have Sent OTP at:"
+            android:textColor="#222"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            />
+        <exodiasolutions.buzz.Custom.TV_normaltext
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:id="@+id/username_otp"
+            android:textColor="#222"
+            android:textSize="16sp"
+            />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Resend OTP"
+            android:id="@+id/sendotp"
+            android:background="@drawable/button_press"
+            android:textColor="#fff"
+            />
+        <exodiasolutions.buzz.Custom.TV_normaltext
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="(Please wait for the mail and check spam too)"
+            android:textColor="#222"
+            android:textSize="16sp"
+            />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/linmain"
+        android:layout_marginLeft="100dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <com.github.glomadrian.codeinputlib.CodeInput
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/code"
+            android:layout_centerInParent="true"
+            app:underline_color="#457ad1"
+            app:underline_selected_color="#9e1ace"
+            app:text_color="#b12eff"
+            app:hint_color="#77ce9d"
+            app:hint_text="Pin code"
+            app:codes="6"
+            />
+
+
+
+    </RelativeLayout>
+    <!--
+        <LinearLayout
+            android:id="@+id/linmain"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="1"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="2"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="3"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="4"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="5"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="6"
+                android:inputType="number" />
+
+        </LinearLayout>-->
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/linmain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/verifytbn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:background="@drawable/button_press"
+            android:visibility="visible"
+            android:text="Verify" />
+
+        <ProgressBar
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/progressbar"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
